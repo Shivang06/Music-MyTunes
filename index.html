@@ -488,14 +488,16 @@ cf:after {
     <section id="video" class="section bg-light">
         <div class="container">
             <h3>The movie and TV collection you always wished for. Granted.</h3>
-            <p class="lead">With over 100,000 movies and TV shows to choose from, there’s always something great to watch
+           
+            <a class="btn btn-secondary" onclick="myFunction()">Read More</a>
+            <div> <p class="lead">With over 100,000 movies and TV shows to choose from, there’s always something great to watch
                 on myTunes and if you
                 watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR.
                 So get
                 ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime,
                 anywhere. Just
                 tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
-            <a href="#" class="btn btn-secondary">Read More</a>
+            </div>
             <img src="https://jolly-kalam-23776e.netlify.app/mytunes/img/mockup2.png" alt="">
         </div>
     </section>
@@ -618,6 +620,15 @@ cf:after {
           Copyright © 2019 Orange myTunes
         </div>
     </footer>
-
+ <script>
+        function myFunction() {
+          var x = document.getElementById("myDiv");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
